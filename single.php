@@ -1,5 +1,16 @@
 <?php get_header(); ?>
 
+<section class="container" role="document">
+  <?php do_action('foundationPress_after_header'); ?>
+
+  	<header class="page-title">
+		<div class="row">
+			<h1 class="entry-title">Blog</h1>
+		</div>
+	</header>
+	
+  <div class="row">
+
 	<div class="small-12 large-8 columns" role="main">
 	
 	<?php do_action('foundationPress_before_content'); ?>

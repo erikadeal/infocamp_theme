@@ -4,6 +4,10 @@ Template Name: Full Width
 */
 get_header(); ?>
 
+<section class="container" role="document">
+  <?php do_action('foundationPress_after_header'); ?>
+  <div class="row">
+
 	<div class="small-12 large-12 columns" role="main">
 	
 	<?php /* Start loop */ ?>

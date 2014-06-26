@@ -31,5 +31,15 @@ function kitchensink_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'kitchensink_scripts' );
 
+function landingpage_scripts() {
+  if ( is_page_template('landing-page.php') ) {
+
+      wp_enqueue_script( 'landing-page', get_template_directory_uri() . '/js/countdown/jquery.downCount.js', array('jquery'), '1.0.0', true);
+
+  }
+}
+
+add_action( 'wp_enqueue_scripts', 'landingpage_scripts' );
+
 
 ?>
