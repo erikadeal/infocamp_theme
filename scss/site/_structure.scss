@@ -91,6 +91,11 @@ h1, h2, h3, h4, h5, h6 {
 		padding-top: 1.5em;
 	}
 
+	.tagline {
+		max-width: 20em;
+		margin: 0 auto;
+	}
+
 	@media screen and (min-width: 641px) {
 
 		h1 {

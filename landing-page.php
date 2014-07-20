@@ -9,7 +9,7 @@ Template Name: Landing Page
 	<div class="row">
 	  <div class="small-12 columns">
 	    <h1>InfoCamp Seattle</h1>
-	    <h2>Some tagline here</h2>
+	    <h2 class="tagline">Always different conversations, always different people.</h2>
 	    <h3>October 25-26, 2014</h3>
 	  </div>
   </div>
