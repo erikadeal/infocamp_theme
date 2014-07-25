@@ -7,6 +7,7 @@
  * 3.0 - Content
  *	3.1 - Pages
  *   3.1.1 - Landing page styles
+ *   3.1.2 - Bio page styles
  *	3.2 - Posts
  *	3.3	- Widgets
  *	3.4 - Comments
@@ -402,6 +403,39 @@ ul.countdown li span {
 ul.countdown li p {
 	color: #a7abb1;
 	font-size: 14px;
+}
+
+/**
+* Bio page styling
+* -------------------------------------
+*/
+
+.organizer {
+	width: 100%;
+	margin-top: 3em;
+	clear: both;
+	border-bottom: 1px solid $light-gray;
+
+	img {
+		width: 25%;
+		float: left;
+		margin-top: 1em;
+		border: 2px solid $light-gray;
+	}
+
+	.description {
+		float: right;
+		width: 73%;
+	}
+
+	.social-links {
+		list-style-type: none;
+
+		li {
+			display: inline-block;
+			padding: 0 1em;
+		} 
+	}
 }
 
 
