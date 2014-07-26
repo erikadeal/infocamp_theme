@@ -446,6 +446,10 @@ ul.countdown li p {
 	}
 }
 
+.row .organizer:last-child {
+	border-bottom: 0;
+}
+
 a.fa {
 	color: #fff;
 	padding: .5em;
