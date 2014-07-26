@@ -29,5 +29,7 @@ require_once('library/enqueue-scripts.php');
 // Add theme support
 require_once('library/theme-support.php');
 
+// Add custom functions
+require_once('library/custom-functions.php');
 
 ?>
