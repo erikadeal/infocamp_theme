@@ -41,11 +41,29 @@ Template Name: Bios Page
 	       		<h3 class="role"><?php the_sub_field('infocamp_role'); ?></h3>
 
 	       		<p><?php the_sub_field('about'); ?></p>
+
+	       		<?php
+	       		// Check for and retrieve social media links
+	       		$twitter = get_sub_field("twitter");
+	       		$linkedin = get_sub_field("linkedin");
+	       		$facebook = get_sub_field("facebook");
+
+	       		?>
 	       		
 	       		<ul class="social-links">
-	       			<li><a href="<?php the_sub_field('twitter'); ?>" class="fa fa-twitter"></a></li>
-	       			<li><a href="<?php the_sub_field('linkedin'); ?>" class="fa fa-linkedin"></a></li>
-	       			<li><a href="<?php the_sub_field('facebook'); ?>" class="fa fa-facebook"></a></li>
+
+	       		<?php if($twitter): ?>
+	       			<li><a href="<?php echo $twitter; ?>" class="fa fa-twitter"></a></li>
+	       		<?php endif; ?>
+
+	       		<?php if($linkedin): ?>
+	       			<li><a href="<?php echo $linkedin; ?>" class="fa fa-linkedin"></a></li>
+	       		<?php endif; ?>
+
+	       		<?php if($facebook): ?>
+	       			<li><a href="<?php echo $facebook; ?>" class="fa fa-facebook"></a></li>
+	       		<?php endif; ?>
+	       		
 	       		</ul>
 
 	       		</div>
