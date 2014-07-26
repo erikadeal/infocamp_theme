@@ -29,9 +29,11 @@ Template Name: Bios Page
 	 
 	    while ( have_rows('organizer') ) : the_row(); ?>
 	 	
-			<div class="organizer"> 
+			<div class="organizer clearfix"> 
 
-				<img src="<?php the_sub_field('image'); ?>" />
+				<div class="image-wrap">
+					<img src="<?php the_sub_field('image'); ?>" />
+				</div>
 
 				<div class="description">
 	       
@@ -39,11 +41,13 @@ Template Name: Bios Page
 	       		<h3 class="role"><?php the_sub_field('infocamp_role'); ?></h3>
 
 	       		<p><?php the_sub_field('about'); ?></p>
+	       		
 	       		<ul class="social-links">
 	       			<li><a href="<?php the_sub_field('twitter'); ?>" class="fa fa-twitter"></a></li>
 	       			<li><a href="<?php the_sub_field('linkedin'); ?>" class="fa fa-linkedin"></a></li>
 	       			<li><a href="<?php the_sub_field('facebook'); ?>" class="fa fa-facebook"></a></li>
 	       		</ul>
+
 	       		</div>
 	        </div>
 	 
