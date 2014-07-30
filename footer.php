@@ -1,4 +1,6 @@
-	</div>
+	<?php get_template_part('part-sponsors'); ?>
+  
+  </div>
 </section>
 
 <footer class="footer">
